@@ -32,6 +32,13 @@
     self.showLb.textColor = [UIColor redColor];
     self.showLb.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview:self.showLb];
+    
+    UILabel *againLb = [[UILabel alloc] initWithFrame:CGRectMake(100, CGRectGetMaxY(self.showLb.frame) + 50, 250, 100)];
+    againLb.backgroundColor = [UIColor blueColor];
+    againLb.textColor = [UIColor blackColor];
+    againLb.textAlignment = NSTextAlignmentCenter;
+    againLb.text = @"Type Anything";
+    [self.view addSubview:againLb];
 }
 
 - (void)didReceiveMemoryWarning {
